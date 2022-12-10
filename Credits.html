@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>
+            Sources
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link 
+        rel="icon" 
+        href="Favicon.png" 
+        type="image/png"
+        Media="(prefers-color-scheme:dark)">
+        <link 
+        rel="icon" 
+        href="Favicon-light.png" 
+        type="image/png"
+        Media="(prefers-color-scheme:light)">
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #FFFFFF;
+            } 
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: medium;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover:not(.active) {
+                background-color: #111;
+            }
+
+            .active {
+                background-color: #0047AB;
+            }
+            .button {
+                border: none;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .button:hover{
+                transform: scale(1.2);
+                transition: all .2s ease-in-out;
+            }
+            .navbar {
+                overflow: hidden;
+            }
+
+            .navbar li {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .subnav {
+                float: left;
+                overflow: hidden;
+            }
+
+            .subnav .subnavbtn {
+                font-size: 16px;  
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar li:hover, .subnav:hover .subnavbtn {
+                background-color: #5fccfe;
+            }
+
+            .subnav-content {
+                display: none;
+                position: absolute;
+                left: 0;
+                background-color: #5fccfe;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .subnav-content li {
+                float: left;
+                color: #0047AB;
+                text-decoration: none;
+            }
+
+            .subnav-content li:hover {
+                background-color: #0047AB;
+                color: #0047AB;
+            }
+
+            .subnav:hover .subnav-content {
+                display: block;
+            }
+            footer{
+            background-color: gray;
+            text-decoration: none;
+            margin-top: 2px;
+            padding-left: 1in;
+            padding-right: 1in;
+            padding-top: .5in;
+            padding-bottom: .5in;
+            }
+            a.Sources{
+                color: #0047AB;
+                float: right;
+            }
+            a.Site {
+                color: #89cff0 ;
+                text-decoration: none;
+            }
+            td a{
+                display: block; 
+                padding: .25in;
+            }
+            td:hover{
+                background-color: black;
+            }
+            table{
+                text-align:center;
+                margin-left: auto;
+                margin-right: auto;
+                border: none;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <div class="navbar"></div>
+            <li><a class="active"href="index.html">GETURCAR</a></li>
+            <div class="subnav">
+                <button class="subnavbtn">Sedan <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                <li><a href="Lowest_Maintenance.html">Lowest Maintenance Cost</a></li>
+                <li><a href="Highest_Fuel_Economy.html">Highest Fuel Economy</a></li>
+                <li><a href="Safety_rankings.html">Highest Safety Rankings</a></li>
+                </div>
+              </div><!--highlight the SUV or sedan name when option of it is picked-->
+              <div class="subnav">
+                <button class="subnavbtn">SUV <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                <li><a href="Lowest_Maintenance_SUV.html">Lowest Maintenance Cost</a></li>
+                <li><a href="Highest_Fuel_Economy_SUV.html">Highest Fuel Economy</a></li>
+                <li><a href="Safety_Rankings_SUV.html">Highest Safety Rankings</a></li>
+                </div>
+              </div>
+            </div>
+          </ul>
+        <h2 style="text-align:center;padding: 5px;"> Sources</h2>
+            <table>
+                <tr><td><a class="Site " href="https://Github.com/"target="_blank">GitHub: Let’s build from here. (n.d.). GitHub. Retrieved December 9, 2022, from https://github.com/</td></a></tr>
+                <tr><td><a class="Site " href="https://www.carvana.com/"target="_blank">Carvana | Buy & Finance Used Cars Online | At Home Delivery. (n.d.). Carvana.com. Retrieved December 9, 2022, from https://www.carvana.com/</a></td></tr>         
+                <tr><td><a class="Site " href="https://www.carmax.com/"target="_blank">CarMax - Shop for used cars, then buy online or at a store. (n.d.). CarMax - Shop for Used Cars, Then Buy Online or at a Store. Retrieved December 9, 2022, from https://Carmax.com</a></td></tr>
+                <tr><td><a class="Site " href="https://caredge.com/"target="_blank">CarEdge - Car Ownership Costs: Depreciation, Maintenance, Insurance, Financing and Fuel by Brand and Model. (n.d.). CarEdge - Car Ownership Costs: Depreciation, Maintenance, Insurance, Financing and Fuel by Brand and Model. Retrieved December 9, 2022, from https://caredge.com/</a></td></tr>
+                <tr><td><a class="Site " href="https://www.kbb.com/"target="_blank">K. (n.d.). Kelley Blue Book | New and Used Car Price Values, Expert Car Reviews. Kbb.com. Retrieved December 9, 2022, from https://www.kbb.com/</a></td></tr>
+                <tr><td><a class="Site " href="https://www.edmunds.com/"target="_blank">New Cars, Used Cars, Car Reviews and Pricing | Edmunds. (n.d.). Edmunds. Retrieved December 9, 2022, from https://www.edmunds.com</a></td></tr>
+                <tr><td><a class="Site " href="https://www.toyota.com/"target="_blank">New Cars, Trucks, SUVs & Hybrids | Toyota Official Site. (n.d.). New Cars, Trucks, SUVs & Hybrids | Toyota Official Site. Retrieved December 9, 2022, from https://www.toyota.com/</a></td></tr>                
+                <tr><td><a class="Site " href= "https://www.subaru.com/index.html"target="_blank">Subaru: Go Where the Love Takes You. (n.d.). Subaru Cars, Sedans, SUVs | Subaru of America. Retrieved December 9, 2022, from https:///index.html</a></td></tr>
+                <tr><td><a class="Site " href= "https://www.honda.com/"target="_blank">American Honda Motor Co., Inc. - Official Site. (n.d.). American Honda Motor Co., Inc. - Official Site. Retrieved December 9, 2022, from https://www.honda.com/</a></td></tr>
+                <tr><td><a class="Site " href= "https://www.kia.com/us/en"target="_blank">SUVs, Sedans, Sports Cars, Hybrids, EVs & Luxury Cars | Kia. (n.d.). SUVs, Sedans, Sports Cars, Hybrids, EVs & Luxury Cars | Kia. Retrieved December 9, 2022, from https://www.kia.com/us/en</a></td></tr>
+                <tr><td><a class="Site " href = "https://www.nissanusa.com/"target="_blank">New Cars, SUVs, Trucks & Electric Vehicles | Nissan USA. (n.d.). Nissan. Retrieved December 9, 2022, from https://www.nissanusa.com/</a></td></tr>
+                <tr><td><a class="Site " href = "https://www.vw.com/en.html"target="_blank">VW.com | Official Home of Volkswagen Cars & SUVs. (n.d.). VW.com | Official Home Of Volkswagen Cars & SUVs. Retrieved December 9, 2022, from https://www.vw.com/en.html</a></td></tr>              
+                <tr><td><a class="Site " href = "https://audi.com/"target="_blank">Audi.com – the international Audi website | audi.com. (n.d.). audi.com. Retrieved December 9, 2022, from https://www.audi.com/en.html</a></td></tr>              
+                <tr><td><a class="Site " href = "https://www.acura.com/"target="_blank">Premium Sedans and SUVs | Acura.com. (n.d.). Premium Sedans and SUVs | Acura.com. Retrieved December 9, 2022, from https://Acura.com</a></td></tr>               
+                <tr><td><a class="Site " href = "https://www.mazdausa.com/"target="_blank">Mazda USA Official Site | Cars, SUVs & Crossovers. (n.d.). Mazda USA Official Site | Cars, SUVs & Crossovers | Mazda USA. Retrieved December 9, 2022, from https://www.mazdausa.com/</a></td></tr>                
+                <tr><td><a class="Site " href = "https://www.hyundaiusa.com/us/en"target="_blank">Hyundai USA | Award-winning cars, SUVs and electrified vehicles. (n.d.). Hyundai Cars, Sedans, SUVs, Compacts, and Luxury | Hyundai. Retrieved December 9, 2022, from https://www.hyundaiusa.com/us/en</a></td></tr>               
+                <tr><td><a class="Site " href = "https://www.jeep.com/"target="_blank">Jeep® SUVs & Crossovers - Official Jeep Site. (n.d.). Jeep® SUVs & Crossovers - Official Jeep Site. Retrieved December 9, 2022, from https://www.jeep.com/</a></td></tr>                
+                <tr><td><a class="Site " href = "https://www.iihs.org/"target="_blank">IIHS-HLDI. (n.d.). IIHS-HLDI Crash Testing and Highway Safety. Retrieved December 9, 2022, from https://www.iihs.org/</a></td></tr>
+            </table>
+        <footer>
+            <p> *Subject to variability and not definite amount 
+              <a class="Sources" href="Credits.html" >Sources</a>
+            </p>
+            <br>
+            <p>By:Aneesh A, Hitansh S</p>
+        </footer>
+    </body>
+</html>

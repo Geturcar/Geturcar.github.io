@@ -1,0 +1,272 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+      Geturcar
+    </title>
+    <link 
+    rel="icon" 
+    href="Favicon.png" 
+    type="image/png"
+    Media="(prefers-color-scheme:dark)">
+    <link 
+    rel="icon" 
+    href="Favicon-light.png" 
+    type="image/png"
+    Media="(prefers-color-scheme:light)">
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+      }
+      a{
+        text-decoration: none;
+      }
+      table {
+  border-collapse:collapse;
+  width: 100%;
+  background-color: #89CFF0;
+}
+th, td {
+  border: 1px solid black ;
+  text-align: center;
+  padding: 16px;
+}
+* {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+    
+    #myInput {
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 12px ;
+      border: 1px solid #ddd;
+      vertical-align: middle;
+      margin-bottom: 12px;
+    }
+    
+    #myTable {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #ddd;
+      font-size: 18px;
+    }
+    
+    #myTable th, #myTable td {
+      text-align: center;
+      padding: 12px;
+    }
+    
+    #myTable tr {
+      border-bottom: 1px solid #ddd;
+    }
+    
+    #myTable tr.header, #myTable tr:hover {
+      background-color: #5fccfe;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #0047AB;
+}
+.button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover{
+  transform: scale(1.2);
+  transition: all .2s ease-in-out;
+}
+.button1{
+  color: #89CFF0;
+  background-color: #0047AB;
+  border-radius: 15px;
+}
+.navbar {
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar li:hover, .subnav:hover .subnavbtn {
+  background-color: #5fccfe;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #5fccfe;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content li {
+  float: left;
+  color: #0047AB;
+  text-decoration: none;
+}
+
+.subnav-content li:hover {
+  background-color: #0047AB;
+  color: #0047AB;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+footer{
+        background-color: gray;
+        text-decoration: none;
+        margin-top: 2px;
+        padding-left: 1in;
+        padding-right: 1in;
+        padding-top: .5in;
+        padding-bottom: .5in;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+      a.Sources{
+        color: #0047AB;
+        float: right;
+      }
+    </style>
+    </head>
+    <body>
+    <ul>
+      <div class="navbar"></div>
+        <li><a class="active"href="index.html">GETURCAR</a></li>
+        <div class="subnav">
+          <button class="subnavbtn">Sedan <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+          <li><a href="Lowest_Maintenance.html">Lowest Maintenance Cost</a></li>
+          <li><a href="Highest_Fuel_Economy.html">Highest Fuel Economy</a></li>
+          <li><a href="Safety_rankings.html">Highest Safety Rankings</a></li>
+          </div>
+        </div>
+        <div class="subnav active">
+          <button class="subnavbtn">SUV <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+          <li><a href="Lowest_Maintenance_SUV.html">Lowest Maintenance Cost</a></li>
+          <li><a href="Highest_Fuel_Economy_SUV.html">Highest Fuel Economy</a></li>
+          <li><a class="active" href="Safety_Rankings_SUV.html">Highest Safety Rankings</a></li>
+          </div>
+        </div>
+      </div>
+    </ul>
+    <h2 style="text-align:center;padding: 5px;">Safety Ranking</h2>
+    <h4 style="text-align:center;padding: 5px;"> Safety rankings show how safe the cars are. These are the top 5 safest cars on the market</h4>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Mazda CX-30 (Small SUV)</td>
+            <td>Volvo XC-40 (Small SUV)</td>
+            <td>Subaru Ascent (Midsize SUV)</td>
+            <td>Acura RDX (Midsize Luxury SUV)</td>
+            <td>Audi Q8 (Large SUV)</td>
+        </tr>
+        <tr>
+            <th>Car</th>
+            <td><img src="Mazda_CX30.png" style="width: 214px; height:120px;"></td>
+            <td><img src="Volvo_XC40.png" style="width: 214px; height:120px;"></td>
+            <td><img src="Subaru_Ascent.png" style="width: 214px; height:120px;"></td>
+            <td><img src="Acura_RDX.png" style="width: 214px; height:120px;"></td>
+            <td><img src="Audi_Q8.png" style="width: 214px; height:120px;"></td>
+        </tr>
+        <tr>
+            <th>Minimum New Car Price</th>
+            <td>$22,500</td>
+            <td>$36,350</td>
+            <td>$33,895</td>
+            <td>$40,600</td>
+            <td>$71,800</td>
+        </tr>
+        <tr>
+            <th>Safety Rating</th>
+            <td>5 stars</td>
+            <td>4.4 stars</td>
+            <td>4.8 stars</td>
+            <td>5 stars</td>
+            <td>4.9 stars</td>
+        </tr>
+        <tr>
+            <th>Buy New</th>
+            <td><a href="https://www.mazdausa.com/vehicles/cx-30?semid=66009657085&providertag=MazdaSEM&servicetag=66009657085&k_keyword=mazda%20cx%2030&k_matchtype=e&gclid=Cj0KCQjwyt-ZBhCNARIsAKH11771HbQtNYdd9yIhd7dWs6Y_spbG41LynYSEQcbAGHAUZI2kaE_xqowaAvk4EALw_wcB&gclsrc=aw.ds"><button class="button button1">Buy</button></a></td>
+            <td><a href="https://www.volvocars.com/us/cars/xc40/"><button class="button button1">Buy</button></a></td>
+            <td><a href="https://www.subaru.com/vehicles/ascent.html"><button class="button button1">Buy</button></a></td>
+            <td><a href="https://toyota.com/Prius/https://www.acura.com/rdx?CMPID=SEARCH_AHM_GOOGLE_NMY_RDX_EVERGREEN_RTL_EN-EN_NA_BRD_NA_NA&gclid=Cj0KCQjwyt-ZBhCNARIsAKH1177bhEXCe_SRPCeoYiGZLe3fzcT4Xf7koS4A4ZzUTSATgxWUWS5tagEaAqeJEALw_wcB&gclsrc=aw.ds&&gclid=Cj0KCQjwyt-ZBhCNARIsAKH1177bhEXCe_SRPCeoYiGZLe3fzcT4Xf7koS4A4ZzUTSATgxWUWS5tagEaAqeJEALw_wcB&gclsrc=aw.ds"><button class="button button1">Buy</button></a></td>
+            <td><a href="https://www.audiusa.com/us/web/en/models/q8/q8/2023/overview.html/"><button class="button button1">Buy</button></a></td>
+        </tr>
+        <tr>
+            <th>Buy Used</th>
+            <td> <a href="https://www.carvana.com/cars/mazda-cx30"><button class="button button1">Buy</button></td>
+            <td> <a href="https://www.carvana.com/cars/volvo-xc40"><button class="button button1">Buy</button></td>
+            <td> <a href="https://www.carvana.com/subaru-ascent"><button class="button button1">Buy</button></td>
+            <td> <a href="https://www.carvana.com/cars/acura-rdx"><button class="button button1">Buy</button></td>
+            <td> <a href="https://www.carvana.com/cars/audi-Q8"><button class="button button1">Buy</button></td>
+        </tr>
+    </table>
+    <footer>
+      <p> *Subject to variability and not definite amount 
+        <a class="Sources" href="Credits.html" >Sources</a>
+      </p>
+      <br>
+      <p>By:Aneesh A, Hitansh S</p>
+    </footer>
+  </body>
+</html>
