@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<!--To do list
+New sorter
+strong fonts
+sitemap bs
+SVG creation
+buy new buy used links
+change remaining files
+create new files
+Finish maybe :)-->
 <html>
   <head>
     <meta charset="UTF-8">
@@ -7,8 +17,12 @@
     <meta name="keywords" content="Geturcar, geturcar, new car, car for teenagers, lowest maintenace car, cheap cars">
     <meta name="description" content="Need a car for yourself or your teenage child, these are the best cars in their respective categories, and great for new learners.">
     <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2aa51cc09e.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Geturcar.css">
     <title>
       Geturcar
     </title>
@@ -22,205 +36,13 @@
       href="Favicon-light.png" 
       type="image/png"
       Media="(prefers-color-scheme:light)">
-    <style>
-      body{
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #FFFFFF;
-      }
-      a{
-        text-decoration: none;
-      }
-      table {
-        border-collapse:collapse;
-        width: 100%;
-        background-color: #5fccfe;
-      }
-      th, td {
-        border: 1px solid black ;
-        text-align: center;
-        padding: 16px;
-      }
-      * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
-
-      #myInput {
-        width: 100%;
-        font-size: 16px;
-        padding: 12px 12px ;
-        border: 1px solid #404040;
-        vertical-align: middle;
-        margin-bottom: 12px;
-      }
-
-      #myTable {
-        border-collapse: collapse;
-        width: 100%;
-        border: 1px solid #FFFFFF;
-        font-size: 18px;
-      }
-
-      #myTable th, #myTable td {
-        text-align: center;
-        padding: 12px;
-      }
-
-      #myTable tr {
-        border-bottom: 1px solid#FFFFFF;
-      }
-
-      #myTable tr.header, #myTable tr:hover {
-        background-color: #89CFF0;
-      }
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: black;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: medium;
-      }
-
-      li {
-        float: left;
-      }
-
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      li a:hover:not(.active) {
-        background-color: #111;
-      }
-
-      .active {
-        background-color: #0047AB;
-      }
-      .button {
-        border: none;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
-      .button:hover{
-        transform: scale(1.2);
-        transition: all .2s ease-in-out;
-      }
-      .navbar {
-        overflow: hidden;
-      }
-
-      .navbar li {
-        float: left;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      .subnav {
-        float: left;
-        overflow: hidden;
-      }
-
-      .subnav .subnavbtn {
-        font-size: 16px;  
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-      }
-
-      .navbar li:hover, .subnav:hover .subnavbtn {
-        background-color: #5fccfe;
-      }
-
-      .subnav-content {
-        display: none;
-        position: absolute;
-        left: 0;
-        background-color: #5fccfe;
-        width: 100%;
-        z-index: 1;
-      }
-
-      .subnav-content li {
-        float: left;
-        color: #0047AB;
-        text-decoration: none;
-      }
-
-      .subnav-content li:hover {
-        background-color: #0047AB;
-        color: #0047AB;
-      }
-
-      .subnav:hover .subnav-content {
-        display: block;
-      }
-      .button1{
-        color: #5fccfe;
-        background-color: #0047AB;
-        border-radius: 15px;
-        
-      }
-      .button2{
-        border: none;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        color: #5fccfe;
-        background-color: #0047AB;
-        border-radius: 15px;
-      }
-      .button2:hover{
-        background-color: #5fccfe;
-        color: #0047AB;
-      }
-
-      .button2.active2{
-        background-color: #000000;
-      }
-
-      footer{
-        background-color: gray;
-        text-decoration: none;
-        margin-top: 2px;
-        padding-left: 1in;
-        padding-right: 1in;
-        padding-top: .5in;
-        padding-bottom: .5in;
-      }
-      a.Sources{
-        color: #0047AB;
-        float: right;
-      }
-    </style>
   </head>
     <body>
     <ul>
       <div class="navbar"></div>
-        <li><a class="active"href="index.html">GETURCAR</a></li>
+        <li><a class="active" href="index.html"><img src="Favicon.png" style="height: 40px; aspect-ratio:1/1; background-image: none; border-radius: 0%; transform: translate(0px,-20px);"></a></li>
         <div class="subnav">
-          <button class="subnavbtn">Sedan <i class="fa fa-caret-down"></i></button>
+          <button class="subnavbtn">Sedan <i class="fa fa-angle-down" style="transform: articleanslate(0,1px);"></i></button>
           <div class="subnav-content">
           <li><a href="Lowest_Maintenance.html">Lowest Maintenance Cost</a></li>
           <li><a href="Highest_Fuel_Economy.html">Highest Fuel Economy</a></li>
@@ -228,7 +50,7 @@
           </div>
         </div><!--highlight the SUV or sedan name when option of it is picked-->
         <div class="subnav">
-          <button class="subnavbtn">SUV <i class="fa fa-caret-down"></i></button>
+          <button class="subnavbtn">SUV <i class="fa fa-angle-down" style="transform: articleanslate(0,1px);"></i></button>
           <div class="subnav-content">
           <li><a href="Lowest_Maintenance_SUV.html">Lowest Maintenance Cost</a></li>
           <li><a href="Highest_Fuel_Economy_SUV.html">Highest Fuel Economy</a></li>
@@ -238,7 +60,7 @@
       </div>
     </ul>
     <br>
-    <img src="Logo.png" style="height:89.6px; width: 240px;display: block;margin-left: auto;margin-right: auto;">
+    <img src="Logo.png" style="height:89.6px; width: 240px;display: block;margin-left: auto;margin-right: auto;background-image: none;">
     <br> 
     <input type="text" id="myInput" onkeyup="Search()" placeholder="Search for cars" title="Type in a name" >
     <br>
@@ -260,316 +82,372 @@
           <th>Buy New</th>
           <th>Buy Used</th>
         </tr>
-        <tr class="item ShowSedan">
-          <td>Toyota Prius</td>
-          <td><img src="Toyota_Prius.png" style="width: 214px; height:120px;"></td>
-          <td>$24,525</td>
-          <td>52 mpg</td>
-          <td>5 stars </td>
-          <td>$6,131</td>
-          <td>$4,008</td>
-          <td><a href="https://toyota.com/Prius/"target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carmax.com/cars/toyota/prius"target="_blank"><button class="button button1">Buy</button></a></td>
-        <tr class="item ShowSedan">
-          <td> Toyota Prius Prime</td>
-          <td><img src="Toyota_Prius_Prime.png" style="width: 214px; height:120px;"></td>
-          <td>$28,200</td>
-          <td>50 mpg</td>
-          <td>4.7 stars</td>
-          <td>$7,050</td>
-          <td>$4,098</td>
-          <td><a href="https://toyota.com/PriusPrime/"target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carmax.com/cars/toyota/prius-prime-hybrid"target="_blank"><button class="button button1">Buy</button></a></td>
-        <tr class="item ShowSedan">
-          <td>Toyota Avalon</td>
-          <td><img src="Toyota_Avalon.png"  style="width: 214px; height:120px;"></td>
-          <td>$36,275</td>
-          <td>27 mpg</td>
-          <td>5 stars</td>
-          <td>$9,069</td>
-          <td>$4,407</td>
-          <td><a href="https://toyota.com/Avalon/"target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carmax.com/cars/toyota/avalon"target="_blank"><button class="button button1">Buy</button></a></td>
-        <tr class="item ShowSedan">
-          <td>Toyota Corolla</td>
-          <td><img src="Toyota_Corolla.png"  style="width: 214px; height:120px;"></td>
-          <td>$20,075</td>
-          <td>35.5 mpg</td>
-          <td>4.9 stars</td>
-          <td>$5,009</td>
-          <td>$4,087</td>
-          <td><a href="https://toyota.com/corolla/"target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carmax.com/cars/toyota/corolla"target="_blank"><button class="button button1">Buy</button></a></td>
-        <tr class="item ShowSedan">
-          <td>Toyota Camry</td>
-          <td><img src="Toyota_Camry.png"  style="width: 214px; height:120px;"></td>
-          <td>$25,295</td>
-          <td>33.5 mpg</td>
-          <td>5 stars</td>
-          <td>$6,324</td>
-          <td>$4,203</td>
-          <td><a href="https://toyota.com/camry/"target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carmax.com/cars/toyota/corolla"target="_blank"><button class="button button1">Buy</button></a></td>
-        <tr class="item ShowSedan">
-          <td>Toyota Corolla Hybrid</td>
-          <td><img src="Toyota_Corolla_Hybrid.png"  style="width: 214px; height:120px;"></td>
-          <td>$23,650</td>
-          <td>52 mpg</td>
-          <td>4.9 stars</td>
-          <td>$5,913</td>
-          <td>$4,120</td>
-          <td><a href="https://toyota.com/corollahybrid/"target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carmax.com/cars/toyota/corolla-hybrid"target="_blank"><button class="button button1">Buy</button></a></td>
-        <tr class="item ShowSedan">
-          <td>Honda Insight</td>
-          <td><img src="Honda_Insight.png"  style="width: 214px; height:120px;"></td>
-          <td>$25,210</td>
-          <td>53 mpg</td>
-          <td>5 stars</td>
-          <td>$6,303</td>
-          <td>$4,420</td>
-          <td><a href="https:/automobiles.honda.com/insight/"target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carmax.com/cars/honda/Insight"target="_blank"><button class="button button1">Buy</button></a></td>
-        <tr class="item ShowSedan">
-          <td>Honda Accord Hybrid</td>
-          <td><img src="Honda_Accord_Hybrid.png"  style="width: 214px; height:120px;"></td>
-          <td>$26,570</td>
-          <td>48 mpg</td>
-          <td>4.8 stars</td>
-          <td>$6,688</td>
-          <td>$4,500</td>
-          <td><a href="https://automobiles.honda.com/accord-sedan?#features-hybrid"target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carmax.com/cars/honda/Accord-hybrid"target="_blank"><button class="button button1">Buy</button></a></td>
-        <tr class="item ShowSedan">
-          <td>Volkswagon Golf</td>
-          <td><img src="Volkswagon_Golf_TSI.png"  style="width: 214px; height:120px;"></td>
-          <td>$23,195</td>
-          <td>34 mpg</td>
-          <td>4.2 stars</td>
-          <td>$5,799</td>
-          <td>$6,800</td>
-          <td><a href="https://www.vw.com/en/models/golf.html?modelId=AU23M2&modelYear=2021&modelVersion=0&exteriorId=F14+2B2B&interiorId=F56+++++TW&---=%7B%22models_golf_sectiongroup_9747253_featureappsection_1921718042%22%3A%22%2F%3Fzip%3D30022%22%7D"target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carmax.com/cars/volkswagon/Golf"target="_blank"><button class="button button1">Buy</button></a></td>
-        <tr class="item ShowSedan">
-          <td>Mazda Mazda 3</td>
-          <td><img src="Mazda3.png"  style="width: 214px; height:120px;"></td>
-          <td>$20,650</td>
-          <td>31 mpg</td>
-          <td>5 stars</td>
-          <td>$5,163</td>
-          <td>$4,830</td>
-          <td> <a href="https://www.mazdausa.com/vehicles/2021-mazda3-sedan?semid=67794656866&providertag=MazdaSEM&servicetag=67794656866&k_keyword=mazda%203&k_matchtype=e&gclid=Cj0KCQjws4aKBhDPARIsAIWH0JWIdbIvV2CC9tJS-VvTAP26WzHAtnCTKqpjstLbg8JRMfIPKJ7rMuwaAnv5EALw_wcB&gclsrc=aw.ds/"target="_blank"><button class="button button1">Buy</button></td>
-          <td><a href="https://www.carmax.com/cars/mazda3"target="_blank"><button class="button button1">Buy</button></a></td>
-        <tr class="item ShowSedan">
-          <td>Honda Civic</td>
-          <td><img src="Honda_Civic.png"  style="width: 214px; height:120px;"></td>
-          <td>$21,700</td>
-          <td>35.5 mpg</td>
-          <td>4.8 stars</td>
-          <td>$5,425</td>
-          <td>$4,180</td>
-          <td><a href="https://automobiles.honda.com/civic-sedan"target="_blank"><button class="button button1">Buy</button></td>
-          <td><a href="https://www.carmax.com/cars/honda/civic"target="_blank"><button class="button button1">Buy</button></a></td>
-        <tr class="item ShowSedan">
-          <td>Subaru Impreza</td>
-          <td><img src="Subaru_Impreza.png"  style="width: 214px; height:120px;"></td>
-          <td>$18,795</td>
-          <td>32 mpg</td>
-          <td>5 stars</td>
-          <td>$3,759</td>
-          <td>$7,500</td>
-          <td><a href="https://www.subaru.com/vehicles/impreza/index.html?GOOGLE700000001067987Impreza+TP_Core71700000010434563Impreza58700000469609693Subaru+Imprezap684209288743700006842092887&s_kwcid=subaru%20impreza&s_kwid=keyword&s_kwcid=Subaru+Impreza&ds_kids=p6842092887&ds_kid=43700006842092887&utm_source=paid-search&utm_medium=google_cpc&ds_rl=1237162&ds_rl=1239969&ds_rl=1242771&gclid=Cj0KCQjws4aKBhDPARIsAIWH0JU3AhSZF_Lgcrrjvgr3KezCxOwQlLGepr7FaAeBEYrjzpGE-Bvi9qwaAshUEALw_wcB&gclsrc=aw.ds" target="_blank"><button class="button button1">Buy</button></td>
-          <td><a href="https://www.carmax.com/cars/subaru/impreza"target="_blank"><button class="button button1">Buy</button></a></td>
-        </tr>
-        <tr class="item ShowSUV">
-          <td>Hyundai Venue</td>
-          <td><img src="Hyundai_Venue.png" style="width: 214px;height: 120px;"></td>
-          <td>$19,000</td>
-          <td>33 mpg</td>
-          <td>4.5 stars</td>
-          <td>$3,800</td>
-          <td>$5,829</td>
-          <td><a href="https://www.hyundaiusa.com/us/en/vehicles/venue"target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/hyundai-venue"target="_blank"><button class="button button1">Buy</button></a></td>
-        </tr>
-        <tr class="item ShowSUV">
-          <td>Subaru Forester</td>
-          <td><img src="Subaru_Forester.png" style="width: 214px;height: 120px;"></td>
-          <td>$25,895</td>
-          <td>30 mpg</td>
-          <td>4.9 stars</td>
-          <td>$5,179</td>
-          <td>$7,289</td>
-          <td><a href="https://www.subaru.com/vehicles/forester.html"target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/subaru-forester"target="_blank"><button class="button button1">Buy</button></a></td>
-        </tr>
-
-        <tr class="item ShowSUV">
-          <td>Jeep Wrangler</td>
-          <td><img src = "Jeep_Wrangler.png" style="width: 214px;height: 120px;"></td>
-          <td>$29,995</td>
-          <td>21 mpg</td>
-          <td>4.0 stars</td>
-          <td>$5,999</td>
-          <td>$8,237</td>
-        <td><a href="https://www.jeep.com/wrangler.html?sid=1037056&KWNM=jeep+wrangler&KWID=43700047422467481&TR=1&channel=paidsearch&ds_rl=1273281&ds_rl=1267886&ds_rl=1272981&gclid=Cj0KCQjwyt-ZBhCNARIsAKH1174Uv0cTRkKSj1j_Qb-mhymcdPU4TUR4GKgnNySQxmLNEMwTmtF2CHAaAvnJEALw_wcB&gclsrc=aw.ds" target="_blank"><button class="button button1">Buy</button></a></td>
-        <td><a href="https://www.carvana.com/cars/jeep-wrangler" target="_blank"><button class="button button1">Buy</button></a></td>
-        </tr>
-
-        <tr class="item ShowSUV">
-          <td>Nissan Armada</td>
-          <td><img src="Nissan_Armada.png" style="width: 214px; height:120px;"></td>
-          <td>$49,900</td>
-          <td>16 mpg</td>
-          <td>3.0 stars</td>
-          <td>$9,980</td>
-          <td>$12,644</td>
-          <td><a href="https://www.nissanusa.com/vehicles/crossovers-suvs/armada.html" target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/nissan-armada" target="_blank"><button class="button button1">Buy</button></a></td>
-        </tr>
-
-        <tr class="item ShowSUV">
-          <td>Volvo XC90</td>
-          <td><img src="Volvo_XC90.png" style="width: 214px; height:120px;"></td>
-          <td>$56,000</td>
-          <td>25 mpg</td>
-          <td>5.0 stars</td>
-          <td>$11,200</td>
-          <td>$11,901</td>
-          <td><a href="https://www.volvocars.com/us/cars/xc90/" target="_blank"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/volvo-xc90" target="_blank"><button class="button button1">Buy</button></a></td>
-        </tr>
-
-        <tr class="item ShowSUV">
-          <td>Kia Sportage Hybrid</td>
-          <td><img src="Kia_Sportage_Hybrid.png" style='width: 214px; height:120px;'></td>
-          <td>$28,585</td>
-          <td>43 mpg</td>
-          <td>5.0 stars</td>
-          <td>$5,717</td>
-          <td>$5,715</td>
-          <td><a href="https://www.kia.com/us/en/sportage-hybrid"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/kia-sportage-hybrid"><button class="button button1">Buy</button></a></td>
-        </tr>
-
-        <tr class="item ShowSUV">
-          <td>Toyota Rav4</td>
-          <td><img src="Toyota_Rav4.png" style='width: 214px; height:120px;'></td>
-          <td>$30,790</td>
-          <td>40 mpg</td>
-          <td>5.0 stars</td>
-          <td>$6,158</td>
-          <td>$5,219</td>
-          <td><a href="https://www.toyota.com/rav4hybrid/"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/toyota-rav4-hybrid"><button class="button button1">Buy</button></a></td>
-        </tr>
-
-        <tr class="item ShowSUV">
-          <td>Toyota Venza</td>
-          <td><img src="Toyota_Venza.png" style='width: 214px; height:120px;'></td>
-          <td>$34,455</td>
-          <td>39 mpg</td>
-          <td>5.0 stars</td>
-          <td>$6,891</td>
-          <td>$9,115</td>
-          <td><a href="https://www.toyota.com/venza/"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/toyota-venza"><button class="button button1">Buy</button></a></td>
-        </tr>
-
-        <tr class="item ShowSUV">
-          <td>Honda CRV Hybrid</td>
-          <td><img src="Honda_CRV_Hybrid.png" style='width: 214px; height:120px;'></td>
-          <td>$33,255</td>
-          <td>38 mpg</td>
-          <td>4.8 stars</td>
-          <td>$6,651</td>
-          <td>$4,855</td>
-          <td><a href="https://automobiles.honda.com/cr-v#hybrid"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/honda-cr-v-hybrid"><button class="button button1">Buy</button></a></td>
-        </tr>
-
-        <tr class="item ShowSUV">
-          <td>Kia Sorento Hybrid</td>
-          <td><img src="Kia_Sorento_Hybrid.png" style='width: 214px; height:120px;'></td>
-          <td>$36,590</td>
-          <td>37 mpg</td>
-          <td>4.0 stars</td>
-          <td>$7,318</td>
-          <td>$7,002</td>
-          <td><a href="https://www.kia.com/us/en/sorento-hybrid"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/kia-sorento-hybrid"><button class="button button1">Buy</button></a></td>
-
-        <tr class="item ShowSUV">
-          <td>Mazda CX30</td>
-          <td><img src="Mazda_CX30.png" style="width: 214px; height:120px;"></td>
-          <td>$22,500</td>
-          <td>26 mpg</td>
-          <td>5.0 stars</td>
-          <td>$4,500</td>
-          <td>$5,582</td>
-          <td><a href="https://www.mazdausa.com/vehicles/cx-30?semid=66009657085&providertag=MazdaSEM&servicetag=66009657085&k_keyword=mazda%20cx%2030&k_matchtype=e&gclid=Cj0KCQjwyt-ZBhCNARIsAKH11771HbQtNYdd9yIhd7dWs6Y_spbG41LynYSEQcbAGHAUZI2kaE_xqowaAvk4EALw_wcB&gclsrc=aw.ds"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/mazda-cx30"><button class="button button1">Buy</button></td>
-        </tr>
-
-        <tr class="item ShowSUV">
-          <td>Volvo XC40</td>
-          <td><img src="Volvo_XC40.png" style="width: 214px; height:120px;"></td>
-          <td>$36,350</td>
-          <td>26 mpg</td>
-          <td>4.4 stars</td>
-          <td>$7,270</td>
-          <td>$9,180</td>
-          <td><a href="https://www.volvocars.com/us/cars/xc40/"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/volvo-xc40"><button class="button button1">Buy</button></td>
-        </tr>
-
-        <tr class="item ShowSUV">
-          <td>Subaru Ascent</td>
-          <td><img src="Subaru_Ascent.png" style="width: 214px; height:120px;"></td>
-          <td>$33,895</td>
-          <td>23.5 mpg</td>
-          <td>4.8 stars</td>
-          <td>$6,779</td>
-          <td>$6,809</td>
-          <td><a href="https://www.subaru.com/vehicles/ascent.html"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/subaru-ascent"><button class="button button1">Buy</button></td>
-        </tr>
-
-        <tr class="item ShowSUV">
-          <td>Acura RDX</td>
-          <td><img src="Acura_RDX.png" style="width: 214px; height:120px;"></td>
-          <td>$40,600</td>
-          <td>25 mpg</td>
-          <td>5 stars</td>
-          <td>$8,120</td>
-          <td>$8,412</td>
-          <td><a href="https://www.acura.com/rdx?CMPID=SEARCH_AHM_GOOGLE_NMY_RDX_EVERGREEN_RTL_EN-EN_NA_BRD_NA_NA&gclid=Cj0KCQjwyt-ZBhCNARIsAKH1177bhEXCe_SRPCeoYiGZLe3fzcT4Xf7koS4A4ZzUTSATgxWUWS5tagEaAqeJEALw_wcB&gclsrc=aw.ds&&gclid=Cj0KCQjwyt-ZBhCNARIsAKH1177bhEXCe_SRPCeoYiGZLe3fzcT4Xf7koS4A4ZzUTSATgxWUWS5tagEaAqeJEALw_wcB&gclsrc=aw.ds"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/acura-rdx"><button class="button button1">Buy</button></td>
-        </tr>
-        <tr class="item ShowSUV">
-          <td>Audi Q8</td>
-          <td><img src="Audi_Q8.png" style="width: 214px; height:120px;"></td>
-          <td>$71,800</td>
-          <td>20 mpg</td>
-          <td>4.9 stars</td>
-          <td>$14,360</td>
-          <td>$14,288</td>
-          <td><a href="https://www.audiusa.com/us/web/en/models/q8/q8/2023/overview.html/"><button class="button button1">Buy</button></a></td>
-          <td><a href="https://www.carvana.com/cars/audi-Q8"><button class="button button1">Buy</button></td>
-        </tr>      
-      </table>
+    </table>
+    <main class="grid">
+        <article class="boundary item ShowSedan">
+          <img src="Toyota_Prius.png" >
+          <div class="grid2">
+            <p style="text-align: left;">Toyota Prius</p>
+            <p style="text-align: right;">$24,525</p>
+            <p style="text-align: left;">52 mpg</p>
+            <p style="text-align: right;">5 stars </p>
+            <p style="text-align: left;">$6,131</p>
+            <p style="text-align: right;">$4,008</p>
+            <p style="text-align: left;"><a href="https://toyota.com/Prius/"target="_blank"><button class="button button1">Buy</button></a></p>
+            <p style="text-align: right;"><a href="https://www.carmax.com/cars/toyota/prius"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSedan">
+          <img src="Toyota_Prius_Prime.png">
+          <div class="grid2">
+          <p style="text-align: left;"> Toyota Prius Prime</p>
+          <p style="text-align: right;">$28,200</p>
+          <p style="text-align: left;">50 mpg</p>
+          <p style="text-align: right;">4.7 stars</p>
+          <p style="text-align: left;">$7,050</p>
+          <p style="text-align: right;">$4,098</p>
+          <p style="text-align: left;"><a href="https://toyota.com/PriusPrime/"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carmax.com/cars/toyota/prius-prime-hybrid"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSedan">
+        <img src="Toyota_Avalon.png">
+        <div class="grid2">
+          <p style="text-align: left;">Toyota Avalon</p>
+          <p style="text-align: right;">$36,275</p>
+          <p style="text-align: left;">27 mpg</p>
+          <p style="text-align: right;">5 stars</p>
+          <p style="text-align: left;">$9,069</p>
+          <p style="text-align: right;">$4,407</p>
+          <p style="text-align: left;"><a href="https://toyota.com/Avalon/"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carmax.com/cars/toyota/avalon"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSedan">
+          <img src="Toyota_Corolla.png">
+          <div class="grid2">
+          <p style="text-align: left;">Toyota Corolla</p>
+          <p style="text-align: right;">$20,075</p>
+          <p style="text-align: left;">35.5 mpg</p>
+          <p style="text-align: right;">4.9 stars</p>
+          <p style="text-align: left;">$5,009</p>
+          <p style="text-align: right;">$4,087</p>
+          <p style="text-align: left;"><a href="https://toyota.com/corolla/"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carmax.com/cars/toyota/corolla"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSedan">
+          <img src="Toyota_Camry.png">
+          <div class="grid2">
+          <p style="text-align: left;">Toyota Camry</p>
+          <p style="text-align: right;">$25,295</p>
+          <p style="text-align: left;">33.5 mpg</p>
+          <p style="text-align: right;">5 stars</p>
+          <p style="text-align: left;">$6,324</p>
+          <p style="text-align: right;">$4,203</p>
+          <p style="text-align: left;"><a href="https://toyota.com/camry/"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carmax.com/cars/toyota/corolla"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSedan">
+          <img src="Toyota_Corolla_Hybrid.png">
+          <div class="grid2">
+          <p style="text-align: left;">Toyota Corolla Hybrid</p>
+          <p style="text-align: right;">$23,650</p>
+          <p style="text-align: left;">52 mpg</p>
+          <p style="text-align: right;">4.9 stars</p>
+          <p style="text-align: left;">$5,913</p>
+          <p style="text-align: right;">$4,120</p>
+          <p style="text-align: left;"><a href="https://toyota.com/corollahybrid/"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carmax.com/cars/toyota/corolla-hybrid"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSedan">
+          <img src="Honda_Insight.png">
+          <div class="grid2">
+          <p style="text-align: left;">Honda Insight</p>
+          <p style="text-align: right;">$25,210</p>
+          <p style="text-align: left;">53 mpg</p>
+          <p style="text-align: right;">5 stars</p>
+          <p style="text-align: left;">$6,303</p>
+          <p style="text-align: right;">$4,420</p>
+          <p style="text-align: left;"><a href="https:/automobiles.honda.com/insight/"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carmax.com/cars/honda/Insight"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSedan">
+          <img src="Honda_Accord_Hybrid.png">
+          <div class="grid2">
+          <p style="text-align: left;">Honda Accord Hybrid</p>
+          <p style="text-align: right;">$26,570</p>
+          <p style="text-align: left;">48 mpg</p>
+          <p style="text-align: right;">4.8 stars</p>
+          <p style="text-align: left;">$6,688</p>
+          <p style="text-align: right;">$4,500</p>
+          <p style="text-align: left;"><a href="https://automobiles.honda.com/accord-sedan?#features-hybrid"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carmax.com/cars/honda/Accord-hybrid"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSedan">
+          <img src="Volkswagon_Golf_TSI.png">
+          <div class="grid2">
+          <p style="text-align: left;">Volkswagon Golf</p>
+          <p style="text-align: right;">$23,195</p>
+          <p style="text-align: left;">34 mpg</p>
+          <p style="text-align: right;">4.2 stars</p>
+          <p style="text-align: left;">$5,799</p>
+          <p style="text-align: right;">$6,800</p>
+          <p style="text-align: left;"><a href="https://www.vw.com/en/models/golf.html?modelId=AU23M2&modelYear=2021&modelVersion=0&exteriorId=F14+2B2B&interiorId=F56+++++TW&---=%7B%22models_golf_sectiongroup_9747253_featureappsection_1921718042%22%3A%22%2F%3Fzip%3D30022%22%7D"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carmax.com/cars/volkswagon/Golf"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSedan">
+          <img src="Mazda3.png">
+          <div class="grid2">
+          <p style="text-align: left;">Mazda Mazda 3</p>
+          <p style="text-align: right;">$20,650</p>
+          <p style="text-align: left;">31 mpg</p>
+          <p style="text-align: right;">5 stars</p>
+          <p style="text-align: left;">$5,163</p>
+          <p style="text-align: right;">$4,830</p>
+          <p style="text-align: left;"><a href="https://www.mazdausa.com/vehicles/2021-mazda3-sedan?semid=67794656866&providertag=MazdaSEM&servicetag=67794656866&k_keyword=mazda%203&k_matchtype=e&gclid=Cj0KCQjws4aKBhDPARIsAIWH0JWIdbIvV2CC9tJS-VvTAP26WzHAtnCTKqpjstLbg8JRMfIPKJ7rMuwaAnv5EALw_wcB&gclsrc=aw.ds/"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carmax.com/cars/mazda3"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSedan">
+          <img src="Honda_Civic.png">
+          <div class="grid2">
+          <p style="text-align: left;">Honda Civic</p>
+          <p style="text-align: right;">$21,700</p>
+          <p style="text-align: left;">35.5 mpg</p>
+          <p style="text-align: right;">4.8 stars</p>
+          <p style="text-align: left;">$5,425</p>
+          <p style="text-align: right;">$4,180</p>
+          <p style="text-align: left;"><a href="https://automobiles.honda.com/civic-sedan"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carmax.com/cars/honda/civic"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSedan">
+          <img src="Subaru_Impreza.png">
+          <div class="grid2">
+          <p style="text-align: left;">Subaru Impreza</p>
+          <p style="text-align: right;">$18,795</p>
+          <p style="text-align: left;">32 mpg</p>
+          <p style="text-align: right;">5 stars</p>
+          <p style="text-align: left;">$3,759</p>
+          <p style="text-align: right;">$7,500</p>
+          <p style="text-align: left;"><a href="https://www.subaru.com/vehicles/impreza/index.html?GOOGLE700000001067987Impreza+TP_Core71700000010434563Impreza58700000469609693Subaru+Imprezap684209288743700006842092887&s_kwcid=subaru%20impreza&s_kwid=keyword&s_kwcid=Subaru+Impreza&ds_kids=p6842092887&ds_kid=43700006842092887&utm_source=paid-search&utm_medium=google_cpc&ds_rl=1237162&ds_rl=1239969&ds_rl=1242771&gclid=Cj0KCQjws4aKBhDPARIsAIWH0JU3AhSZF_Lgcrrjvgr3KezCxOwQlLGepr7FaAeBEYrjzpGE-Bvi9qwaAshUEALw_wcB&gclsrc=aw.ds" target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carmax.com/cars/subaru/impreza"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Hyundai_Venue.png">
+          <div class="grid2">
+          <p style="text-align: left;">Hyundai Venue</p>
+          <p style="text-align: right;">$19,000</p>
+          <p style="text-align: left;">33 mpg</p>
+          <p style="text-align: right;">4.5 stars</p>
+          <p style="text-align: left;">$3,800</p>
+          <p style="text-align: right;">$5,829</p>
+          <p style="text-align: left;"><a href="https://www.hyundaiusa.com/us/en/vehicles/venue"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/hyundai-venue"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Subaru_Forester.png">
+          <div class="grid2">
+          <p style="text-align: left;">Subaru Forester</p>
+          <p style="text-align: right;">$25,895</p>
+          <p style="text-align: left;">30 mpg</p>
+          <p style="text-align: right;">4.9 stars</p>
+          <p style="text-align: left;">$5,179</p>
+          <p style="text-align: right;">$7,289</p>
+          <p style="text-align: left;"><a href="https://www.subaru.com/vehicles/forester.html"target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/subaru-forester"target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src = "Jeep_Wrangler.png">
+          <div class="grid2">
+          <p style="text-align: left;">Jeep Wrangler</p>
+          <p style="text-align: right;">$29,995</p>
+          <p style="text-align: left;">21 mpg</p>
+          <p style="text-align: right;">4.0 stars</p>
+          <p style="text-align: left;">$5,999</p>
+          <p style="text-align: right;">$8,237</p>
+        <p style="text-align: left;"><a href="https://www.jeep.com/wrangler.html?sid=1037056&KWNM=jeep+wrangler&KWID=43700047422467481&article=1&channel=paidsearch&ds_rl=1273281&ds_rl=1267886&ds_rl=1272981&gclid=Cj0KCQjwyt-ZBhCNARIsAKH1174Uv0carticlekKSj1j_Qb-mhymcdPU4TUR4GKgnNySQxmLNEMwTmtF2CHAaAvnJEALw_wcB&gclsrc=aw.ds" target="_blank"><button class="button button1">Buy</button></a></p>
+        <p style="text-align: right;"><a href="https://www.carvana.com/cars/jeep-wrangler" target="_blank"><button class="button button1">Buy</button></a></p>
+        </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Nissan_Armada.png">
+          <div class="grid2">
+          <p style="text-align: left;">Nissan Armada</p>
+          <p style="text-align: right;">$49,900</p>
+          <p style="text-align: left;">16 mpg</p>
+          <p style="text-align: right;">3.0 stars</p>
+          <p style="text-align: left;">$9,980</p>
+          <p style="text-align: right;">$12,644</p>
+          <p style="text-align: left;"><a href="https://www.nissanusa.com/vehicles/crossovers-suvs/armada.html" target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/nissan-armada" target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Volvo_XC90.png">
+          <div class="grid2">
+          <p style="text-align: left;">Volvo XC90</p>
+          <p style="text-align: right;">$56,000</p>
+          <p style="text-align: left;">25 mpg</p>
+          <p style="text-align: right;">5.0 stars</p>
+          <p style="text-align: left;">$11,200</p>
+          <p style="text-align: right;">$11,901</p>
+          <p style="text-align: left;"><a href="https://www.volvocars.com/us/cars/xc90/" target="_blank"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/volvo-xc90" target="_blank"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Kia_Sportage_Hybrid.png">
+          <div class="grid2">
+          <p style="text-align: left;">Kia Sportage Hybrid</p>
+          <p style="text-align: right;">$28,585</p>
+          <p style="text-align: left;">43 mpg</p>
+          <p style="text-align: right;">5.0 stars</p>
+          <p style="text-align: left;">$5,717</p>
+          <p style="text-align: right;">$5,715</p>
+          <p style="text-align: left;"><a href="https://www.kia.com/us/en/sportage-hybrid"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/kia-sportage-hybrid"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Toyota_Rav4.png">
+          <div class="grid2">
+          <p style="text-align: left;">Toyota Rav4</p>
+          <p style="text-align: right;">$30,790</p>
+          <p style="text-align: left;">40 mpg</p>
+          <p style="text-align: right;">5.0 stars</p>
+          <p style="text-align: left;">$6,158</p>
+          <p style="text-align: right;">$5,219</p>
+          <p style="text-align: left;"><a href="https://www.toyota.com/rav4hybrid/"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/toyota-rav4-hybrid"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Toyota_Venza.png">
+          <div class="grid2">
+          <p style="text-align: left;">Toyota Venza</p>
+          <p style="text-align: right;">$34,455</p>
+          <p style="text-align: left;">39 mpg</p>
+          <p style="text-align: right;">5.0 stars</p>
+          <p style="text-align: left;">$6,891</p>
+          <p style="text-align: right;">$9,115</p>
+          <p style="text-align: left;"><a href="https://www.toyota.com/venza/"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/toyota-venza"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Honda_CRV_Hybrid.png">
+          <div class="grid2">
+          <p style="text-align: left;">Honda CRV Hybrid</p>
+          <p style="text-align: right;">$33,255</p>
+          <p style="text-align: left;">38 mpg</p>
+          <p style="text-align: right;">4.8 stars</p>
+          <p style="text-align: left;">$6,651</p>
+          <p style="text-align: right;">$4,855</p>
+          <p style="text-align: left;"><a href="https://automobiles.honda.com/cr-v#hybrid"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/honda-cr-v-hybrid"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Kia_Sorento_Hybrid.png">
+          <div class="grid2">
+          <p style="text-align: left;">Kia Sorento Hybrid</p>
+          <p style="text-align: right;">$36,590</p>
+          <p style="text-align: left;">37 mpg</p>
+          <p style="text-align: right;">4.0 stars</p>
+          <p style="text-align: left;">$7,318</p>
+          <p style="text-align: right;">$7,002</p>
+          <p style="text-align: left;"><a href="https://www.kia.com/us/en/sorento-hybrid"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/kia-sorento-hybrid"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Mazda_CX30.png">
+          <div class="grid2">
+          <p style="text-align: left;">Mazda CX30</p>
+          <p style="text-align: right;">$22,500</p>
+          <p style="text-align: left;">26 mpg</p>
+          <p style="text-align: right;">5.0 stars</p>
+          <p style="text-align: left;">$4,500</p>
+          <p style="text-align: right;">$5,582</p>
+          <p style="text-align: left;"><a href="https://www.mazdausa.com/vehicles/cx-30?semid=66009657085&providertag=MazdaSEM&servicetag=66009657085&k_keyword=mazda%20cx%2030&k_matchtype=e&gclid=Cj0KCQjwyt-ZBhCNARIsAKH11771HbQtNYdd9yIhd7dWs6Y_spbG41LynYSEQcbAGHAUZI2kaE_xqowaAvk4EALw_wcB&gclsrc=aw.ds"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/mazda-cx30"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Volvo_XC40.png">
+          <div class="grid2">
+          <p style="text-align: left;">Volvo XC40</p>
+          <p style="text-align: right;">$36,350</p>
+          <p style="text-align: left;">26 mpg</p>
+          <p style="text-align: right;">4.4 stars</p>
+          <p style="text-align: left;">$7,270</p>
+          <p style="text-align: right;">$9,180</p>
+          <p style="text-align: left;"><a href="https://www.volvocars.com/us/cars/xc40/"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/volvo-xc40"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Subaru_Ascent.png">
+          <div class="grid2">
+          <p style="text-align: left;">Subaru Ascent</p>
+          <p style="text-align: right;">$33,895</p>
+          <p style="text-align: left;">23.5 mpg</p>
+          <p style="text-align: right;">4.8 stars</p>
+          <p style="text-align: left;">$6,779</p>
+          <p style="text-align: right;">$6,809</p>
+          <p style="text-align: left;"><a href="https://www.subaru.com/vehicles/ascent.html"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/subaru-ascent"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Acura_RDX.png">
+          <div class="grid2">
+          <p style="text-align: left;">Acura RDX</p>
+          <p style="text-align: right;">$40,600</p>
+          <p style="text-align: left;">25 mpg</p>
+          <p style="text-align: right;">5 stars</p>
+          <p style="text-align: left;">$8,120</p>
+          <p style="text-align: right;">$8,412</p>
+          <p style="text-align: left;"><a href="https://www.acura.com/rdx?CMPID=SEARCH_AHM_GOOGLE_NMY_RDX_EVERGREEN_RTL_EN-EN_NA_BRD_NA_NA&gclid=Cj0KCQjwyt-ZBhCNARIsAKH1177bhEXCe_SRPCeoYiGZLe3fzcT4Xf7koS4A4ZzUTSATgxWUWS5tagEaAqeJEALw_wcB&gclsrc=aw.ds&&gclid=Cj0KCQjwyt-ZBhCNARIsAKH1177bhEXCe_SRPCeoYiGZLe3fzcT4Xf7koS4A4ZzUTSATgxWUWS5tagEaAqeJEALw_wcB&gclsrc=aw.ds"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/acura-rdx"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>
+        <article class="boundary item ShowSUV">
+          <img src="Audi_Q8.png">
+          <div class="grid2">
+          <p style="text-align: left;">Audi Q8</p>
+          <p style="text-align: right;">$71,800</p>
+          <p style="text-align: left;">20 mpg</p>
+          <p style="text-align: right;">4.9 stars</p>
+          <p style="text-align: left;">$14,360</p>
+          <p style="text-align: right;">$14,288</p>
+          <p style="text-align: left;"><a href="https://www.audiusa.com/us/web/en/models/q8/q8/2023/overview.html/"><button class="button button1">Buy</button></a></p>
+          <p style="text-align: right;"><a href="https://www.carvana.com/cars/audi-Q8"><button class="button button1">Buy</button></a></p>
+          </div>
+        </article>  
+      </main>    
     <footer>
-      <p> *Subject to variability and not definite amount 
+      <p style="text-align: left; color:rgb(var(--primary));"> *Subject to variability and not definite amount 
         <a class="Sources" href="Credits.html" >Sources</a>
       </p>
       <br>
-      <p>By:Aneesh A, Hitansh S</p>
+      <p style="text-align: left;color: rgb(var(--primary));">By:Aneesh A, Hitansh S</p>
     </footer>
     <script>
     function Search() {//Search
     let input = document.getElementById('myInput').value
     input=input.toLowerCase();
-    let x = document.getElementsByTagName('tr');
+    let x = document.getElementsByTagName('article');
     for (i = 0; i < x.length; i++) {
     if(!x[i].innerHTML.toLowerCase().includes(input)){
             x[i].style.display="none";}           

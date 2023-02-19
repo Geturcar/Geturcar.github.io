@@ -1,0 +1,235 @@
+:root{
+--primary: 0, 71, 171;
+--secondary: 95, 204, 254;
+--tertiary: 0,0,0;
+--bg:32,32,32;
+}
+body{
+font-family: "Opensans", sans-serif;
+background-color: rgb(var(--bg));
+color:rgb(var(--secondary));
+}
+a{
+    text-decoration: none;
+}
+img{
+width: 100%;
+aspect-ratio: 200/113;
+grid-area: pic;
+justify-content: space-between;
+background-image: url("carbg.png");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 10px 10px 0 0;
+}
+
+.boundary:hover{
+box-shadow:2px 2px 10px rgba(230, 230, 230, 10%);
+}
+/*table {
+border-collapse:collapse;
+width: 100%;
+background-color: #5fccfe;
+}
+th, td {
+border: 1px solid black ;
+text-align: center;
+padding: 16px;
+}*/
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+#myInput {
+width: 98.5%;
+font-size: 16px;
+padding: 12px 12px ;
+border: 1px solid #404040;
+vertical-align: middle;
+margin: 10px;
+border-radius: 5px;
+}
+.grid{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px, 360px));
+grid-gap: clamp(1fr, 1fr, 1fr);
+}
+.grid2{
+display: grid;
+grid-template-areas:
+"pic pic"
+"Name Safety"
+"MPG Maintence"
+"Price Down"
+"Buy Buy" ;
+gap: 1rem;
+align-items: center;
+text-align: center;
+background-color: rgb(var(--tertiary));
+border-radius: 0 0 10px 10px;
+}
+.boundary{
+border-radius: 10px;
+border: 1px solid rgba(0, 0, 0, .2);
+margin: 10px;
+
+}
+p{
+margin-top: 0;
+margin-bottom: 0;
+margin-left: .25rem;
+margin-right: .25rem;
+}
+/* #myTable {
+border-collapse: collapse;
+width: 100%;
+border: 1px solid #FFFFFF;
+font-size: 18px;
+}
+
+#myTable th, #myTable td {
+text-align: center;
+padding: 12px;
+}
+
+#myTable tr {
+border-bottom: 1px solid#FFFFFF;
+}
+
+#myTable tr.header, #myTable tr:hover {
+background-color: #89CFF0;
+}*/
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(var(--tertiary));
+font-size: medium;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color:rgb(var(--secondary));
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover:not(.active) {
+color: rgb(var(--primary));
+}
+
+.active {
+color: rgb(var(--primary));
+}
+.button {
+border: none;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.button:hover{
+transform: scale(1.2);
+transition: all .2s ease-in-out;
+}
+.navbar {
+overflow: hidden;
+}
+
+.navbar li {
+float: left;
+font-size: 16px;
+color: rgb(var(--secondary))
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.subnav {
+float: left;
+overflow: hidden;
+}
+
+.subnav .subnavbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+color: rgb(var(--secondary));
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.navbar li:hover, .subnav:hover .subnavbtn {
+color: rgb(var(--primary));
+}
+
+.subnav-content {
+display: none;
+position: absolute;
+left: 0;
+background-color: rgb(var(--tertiary));
+width: 100%;
+z-index: 1;
+}
+
+.subnav-content li {
+float: left;
+color: rgb(var(--secondary));
+text-decoration: none;
+}
+
+.subnav-content li:hover {
+color: rgb(var(--primary));
+}
+
+.subnav:hover .subnav-content {
+display: block;
+}
+.button1{
+color: rgb(var(--secondary));
+background-color: rgb(var(--primary));
+border-radius: 15px;
+
+}
+.button2{
+border: none;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+color: rgb(var(--secondary));
+background-color:rgb(var(--primary));
+border-radius: 15px;
+}
+.button2:hover, .button2.active2{
+color:rgb(var(--tertiary))
+}
+
+footer{
+background-color: rgb(var(--secondary));
+text-decoration: none;
+margin-top: 2px;
+padding-left: 1in;
+padding-right: 1in;
+padding-top: .5in;
+padding-bottom: .5in;
+}
+a.Sources{
+color: rgb(var(--primary));
+float: right;
+}
