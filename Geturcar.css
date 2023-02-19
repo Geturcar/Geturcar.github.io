@@ -55,6 +55,7 @@ border-radius: 5px;
 display: grid;
 grid-template-columns: repeat(auto-fit,minmax(250px, 360px));
 grid-gap: clamp(1fr, 1fr, 1fr);
+justify-content: center;
 }
 .grid2{
 display: grid;
@@ -233,3 +234,8 @@ a.Sources{
 color: rgb(var(--primary));
 float: right;
 }
+g{
+    display: flex;
+    justify-content: center;
+    gap: 1rem
+  }
