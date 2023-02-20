@@ -249,7 +249,7 @@ margin-top: .6rem;
 margin-bottom: .8rem;
 }
 .grid5{
-grid-template-columns: repeat(auto-fit,minmax(250px, 290px))!important;
+grid-template-columns: repeat(auto-fit,minmax(250px, 290px));
 }
 i{
 transform: translate(0,2px);
