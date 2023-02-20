@@ -4,7 +4,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="xNE5Bcr_fMJ3Lggonbuwqgww8bLqIK3Tzj_6h1KAIME" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/2aa51cc09e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Geturcar.css">
 <title>
 Highest Fuel Economy
 </title>
@@ -18,162 +19,13 @@ rel="icon"
 href="Favicon-light.png" 
 type="image/png"
 Media="(prefers-color-scheme:light)">
-<style>
-        * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
-      body{
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: white;
-      }
-      a{
-        text-decoration: none;
-
-  }
-table {
-  border-collapse: collapse;
-  width:100%;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #89CFF0;
-}
-
-td, th {
-  border: 1px solid black ;
-  text-align: center;
-  padding: 8px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #0047AB;
-}
-.button {
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button:hover{
-  transform: scale(1.2);
-  transition: all .2s ease-in-out;
-}
-.button1{
-  color: #89CFF0;
-  background-color: #0047AB;
-  border-radius: 15px;
-}
-.navbar {
-  overflow: hidden;
-}
-
-.navbar li {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.subnav {
-  float: left;
-  overflow: hidden;
-}
-
-.subnav .subnavbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar li:hover, .subnav:hover .subnavbtn {
-  background-color: #5fccfe;
-}
-
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: #5fccfe;
-  width: 100%;
-  z-index: 1;
-}
-
-.subnav-content li {
-  float: left;
-  color: #0047AB;
-  text-decoration: none;
-}
-
-.subnav-content li:hover {
-  background-color: #0047AB;
-  color: #0047AB;
-}
-
-.subnav:hover .subnav-content {
-  display: block;
-}
-footer{
-        background-color: gray;
-        text-decoration: none;
-        margin-top: 2px;
-        padding-left: 1in;
-        padding-right: 1in;
-        padding-top: .5in;
-        padding-bottom: .5in;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        
-      }
-      a.Sources{
-        color: #0047AB;
-        float: right;
-      }
-</style>
 </head>
 <body>
     <ul>
       <div class="navbar"></div>
-        <li><a class= "active" href="index.html">GETURCAR</a></li>
-        <div class="subnav active">
-          <button class="subnavbtn">Sedan <i class="fa fa-caret-down"></i></button>
+        <li><a href="index.html"><img src="Favicon.png" style="height: 40px; aspect-ratio:1/1; background-image: none; border-radius: 0%; transform: translate(10px,-15px);"></a></li>
+        <div class="subnav">
+          <button class="subnavbtn active">Sedan <i class="fa fa-angle-down"></i></button>
           <div class="subnav-content">
           <li><a href="Lowest_Maintenance.html">Lowest Maintenance Cost</a></li>
           <li><a class="active" href="Highest_Fuel_Economy.html">Highest Fuel Economy</a></li>
@@ -181,7 +33,7 @@ footer{
           </div>
         </div>
         <div class="subnav">
-          <button class="subnavbtn">SUV <i class="fa fa-caret-down"></i></button>
+          <button class="subnavbtn">SUV <i class="fa fa-angle-down"></i></button>
           <div class="subnav-content">
           <li><a href="Lowest_Maintenance_SUV.html">Lowest Maintenance Cost</a></li>
           <li><a href="Highest_Fuel_Economy_SUV.html">Highest Fuel Economy</a></li>
@@ -191,63 +43,71 @@ footer{
       </div>
     </ul>
     <h2 style="text-align:center;padding: 5px;">Highest Fuel Economy</h2>
-    <h4 style="text-align:center;padding: 5px;"> Highest Fuel Economy means how far the car will travel on just one gallon of fuel. These are the top 5 cars with the highest fuel economy</h4>
-<table>
-<tr>
-<th>NAME</th>
-<th>Toyota Corolla hybrid</td>
-<th>Toyota Prius</th>
-<th>Toyota Prius Prime</th>
-<th>Honda Insight</th>
-<th>Honda Accord Hybrid</th>
-</tr>
-<tr>
-<th>CAR</th>
-<td><img src="Toyota_Corolla_Hybrid.png" style="width: 214px; height:120px;"></td>
-<td><img src="Toyota_Prius.png" style="width: 214px; height:120px;"></td>
-<td><img src="Toyota_Prius_Prime.png" style="width: 214px; height:120px;"></td>
-<td><img src="Honda_Insight.png" style="width: 214px; height:120px;"></td>
-<td><img src="Honda_Accord_Hybrid.png" style="width: 214px; height:120px;"></td>
-</tr>
-<tr>
-<th> Minimum New Car Price</th>
-<td>$23,650</td>
-<td>$24,525</td>
-<td>$28,200</td>
-<td>$25,210</td>
-<td>$26,570</td>
-</tr>
-<tr>
-<th>Highest Miles per Gallon</th>
-<td>52 mpg</td>
-<td>52 mpg</td>
-<td>50 mpg</td>
-<td>53 mpg</td>
-<td>48 mpg</td>
-</tr>
-<tr>
-<th>Buy New</th>
-<td><a href="https://toyota.com/corollahybrid/"><button class="button button1">Buy</button></a></td>
-<td><a href="https://toyota.com/Prius/"><button class="button button1">Buy</button></a></td>
-<td><a href="https://toyota.com/PriusPrime/"><button class="button button1">Buy</button></a></td>
-<td><a href="https://automobiles.honda.com/insight/"><button class="button button1">Buy</button></a></td>
-<td><a href="https://automobiles.honda.com/accord-sedan?#features-hybrid"><button class="button button1">Buy</button></a></td>
-</tr>
-<tr>
-<th>Buy Used</th>
-<td><a href="https://www.carmax.com/cars/toyota/corolla-hybrid"><button class="button button1">Buy</button></a></td>
-<td><a href="https://www.carmax.com/cars/toyota/prius"><button class="button button1">Buy</button></a></td>
-<td><a href="https://www.carmax.com/cars/toyota/prius-prime-hybrid"><button class="button button1">Buy</button></a></td>
-<td><a href="https://www.carmax.com/cars/honda/Insight"><button class="button button1">Buy</button></a></td>
-<td><a href="https://www.carmax.com/cars/honda/Accord-hybrid"><button class="button button1">Buy</button></a></td>
-</tr>
-</table>
-<footer>
+    <h4 style="text-align:center;padding: 5px;"> Highest fuel economy means how far the car will travel on just one gallon of fuel. These are the top 5 cars with the highest fuel economy</h4>
+    <h5 style="text-align:center;padding: 5px;" >The fuel economy is bolded</h5>
+<main class="grid grid5">
+  <article class="boundary item ShowSedan">
+    <img src="Toyota_Corolla_Hybrid.png">
+    <div class="grid2">
+    <p style="text-align: left;">Toyota Corolla Hybrid</p>
+    <p class="head" style="text-align: right;">52 mpg</p>
+    <p style="text-align: left;">$23,650</p>
+    <p class="down" style="text-align: right;">$4,120 <down></down></p>
+    <p style="text-align: left;"><a href="https://toyota.com/corollahybrid/"target="_blank"><button class="button button1">Buy New</button></a></p>
+    <p style="text-align: right;"><a href="https://www.carmax.com/cars/toyota/corolla-hybrid"target="_blank"><button class="button button1">Buy Used</button></a></p>
+    </div>
+  </article>
+  <article class="boundary item ShowSedan">
+    <img src="Honda_Insight.png">
+    <div class="grid2">
+    <p class="short" style="text-align: left;">Honda Insight</p>
+    <p class="head" style="text-align: right;">53 mpg</p>
+    <p style="text-align: left;">$25,210</p>
+    <p class="down" style="text-align: right;">$4,420 down*</p>
+    <p style="text-align: left;"><a href="https:/automobiles.honda.com/insight/"target="_blank"><button class="button button1">Buy New</button></a></p>
+    <p style="text-align: right;"><a href="https://www.carmax.com/cars/honda/Insight"target="_blank"><button class="button button1">Buy Used</button></a></p>
+    </div>
+  </article>
+  <article class="boundary item ShowSedan">
+    <img src="Toyota_Prius.png" >
+    <div class="grid2">
+      <p class="short" style="text-align: left;">Toyota Prius</p>
+      <p class="head" style="text-align: right;">52 mpg</p>
+      <p style="text-align: left;">$24,525</p>
+      <p class="down" style="text-align: right;">$4,008 down*</p>
+      <p style="text-align: left;"><a href="https://toyota.com/Prius/"target="_blank"><button class="button button1">Buy New</button></a></p>
+      <p style="text-align: right;"><a href="https://www.carmax.com/cars/toyota/prius"target="_blank"><button class="button button1">Buy Used</button></a></p>
+    </div>
+  </article>
+  <article class="boundary item ShowSedan">
+    <img src="Toyota_Prius_Prime.png">
+    <div class="grid2">
+    <p style="text-align: left;"> Toyota Prius Prime</p>
+    <p class="head" style="text-align: right;">48 mpg</p>
+    <p style="text-align: left;">$28,200</p>
+    <p class="down" style="text-align: right;">$4,098 down*</p>
+    <p style="text-align: left;"><a href="https://toyota.com/PriusPrime/"target="_blank"><button class="button button1">Buy New</button></a></p>
+    <p style="text-align: right;"><a href="https://www.carmax.com/cars/toyota/prius-prime-hybrid"target="_blank"><button class="button button1">Buy Used</button></a></p>
+    </div>
+  </article>
+  <article class="boundary item ShowSedan">
+    <img src="Honda_Accord_Hybrid.png">
+    <div class="grid2">
+    <p style="text-align: left;">Honda Accord Hybrid</p>
+    <p class="head" style="text-align: right;">48 mpg</p>
+    <p style="text-align: left;">$26,570</p>
+    <p class="down" style="text-align: right;">$4,500 down*</p>
+    <p style="text-align: left;"><a href="https://automobiles.honda.com/accord-sedan?#features-hybrid"target="_blank"><button class="button button1">Buy New</button></a></p>
+    <p style="text-align: right;"><a href="https://www.carmax.com/cars/honda/Accord-hybrid"target="_blank"><button class="button button1">Buy Used</button></a></p>
+    </div>
+  </article>
+  </main>
+<footer style="position: fixed;">
   <p> *Subject to variability and not definite amount 
     <a class="Sources" href="Credits.html" >Sources</a>
   </p>
-  <br>
-  <p>By:Aneesh A, Hitansh S</p>
+<p style="margin-top: .5rem; margin-bottom: .5rem;">MSRP is given; may vary.</p>
+<p style="font-size: 12px; font-weight: 500;">By:Aneesh A, Hitansh S</p>
 </footer>
 </body>
 </html>
