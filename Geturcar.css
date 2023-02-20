@@ -19,18 +19,15 @@
 width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
 background: rgba(var(--bg),0.2);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
 background: rgb(var(--secondary));
 border-radius: 5px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background: rgb(var(--primary));
 }
