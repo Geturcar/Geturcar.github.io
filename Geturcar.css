@@ -9,6 +9,9 @@
 .filter{
 filter:brightness(100%);
 }
+td:hover{
+    background-color: black;
+}
 }
 @media (prefers-color-scheme: light){
 :root{
@@ -18,7 +21,10 @@ filter:brightness(100%);
 --bg:225,225,225;
 }
 .filter{
-filter:contrast(100%);
+filter:brightness(0%)contrast(100%);
+}
+td:hover{
+    background-color: white;
 }
 }
 ::-webkit-scrollbar {
@@ -267,4 +273,20 @@ opacity: 0.8;
 .head{
 font-size: 18px;
 font-weight: 500;
+}
+td a{
+    display: block; 
+    padding: .25in;
+    color: rgb(var(--secondary));
+}
+@media (prefers-color-scheme: dark){td:hover{
+    background-color: black;
+}}
+
+table{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    width: 100%;
 }
