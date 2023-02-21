@@ -7,7 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="google-site-verification" content="xNE5Bcr_fMJ3Lggonbuwqgww8bLqIK3Tzj_6h1KAIME" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/2aa51cc09e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Geturcar.css">
         <link 
         rel="icon" 
         href="Favicon.png" 
@@ -19,131 +20,6 @@
         type="image/png"
         Media="(prefers-color-scheme:light)">
         <style>
-            body{
-                font-family: Arial, Helvetica, sans-serif;
-                background-color: #FFFFFF;
-            } 
-            * {
-                box-sizing: border-box;
-                padding: 0;
-                margin: 0;
-                text-decoration: none;
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: black;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: medium;
-            }
-
-            li {
-                float: left;
-            }
-
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            li a:hover:not(.active) {
-                background-color: #111;
-            }
-
-            .active {
-                background-color: #0047AB;
-            }
-            .button {
-                border: none;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-            }
-            .button:hover{
-                transform: scale(1.2);
-                transition: all .2s ease-in-out;
-            }
-            .navbar {
-                overflow: hidden;
-            }
-
-            .navbar li {
-                float: left;
-                font-size: 16px;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-            .subnav {
-                float: left;
-                overflow: hidden;
-            }
-
-            .subnav .subnavbtn {
-                font-size: 16px;  
-                border: none;
-                outline: none;
-                color: white;
-                padding: 14px 16px;
-                background-color: inherit;
-                font-family: inherit;
-                margin: 0;
-            }
-
-            .navbar li:hover, .subnav:hover .subnavbtn {
-                background-color: #5fccfe;
-            }
-
-            .subnav-content {
-                display: none;
-                position: absolute;
-                left: 0;
-                background-color: #5fccfe;
-                width: 100%;
-                z-index: 1;
-            }
-
-            .subnav-content li {
-                float: left;
-                color: #0047AB;
-                text-decoration: none;
-            }
-
-            .subnav-content li:hover {
-                background-color: #0047AB;
-                color: #0047AB;
-            }
-
-            .subnav:hover .subnav-content {
-                display: block;
-            }
-            footer{
-            background-color: gray;
-            text-decoration: none;
-            margin-top: 2px;
-            padding-left: 1in;
-            padding-right: 1in;
-            padding-top: .5in;
-            padding-bottom: .5in;
-            }
-            a.Sources{
-                color: #0047AB;
-                float: right;
-            }
-            a.Site {
-                color: #89cff0 ;
-                text-decoration: none;
-            }
             td a{
                 display: block; 
                 padding: .25in;
@@ -163,7 +39,7 @@
     <body>
         <ul>
             <div class="navbar"></div>
-            <li><a class="active"href="index.html">GETURCAR</a></li>
+            <li><a href="index.html"><img src="Favicon_light.svg" style="height: 40px; aspect-ratio:1/1; background-image: none; border-radius: 0%; transform: translate(10px,-15px);" class="filter"></a></li>
             <div class="subnav">
                 <button class="subnavbtn">Sedan <i class="fa fa-caret-down"></i></button>
                 <div class="subnav-content">
@@ -207,8 +83,8 @@
             <p> *Subject to variability and not definite amount 
               <a class="Sources" href="Credits.html" >Sources</a>
             </p>
-            <br>
-            <p>By:Aneesh A, Hitansh S</p>
+            <p style="margin-top: .5rem; margin-bottom: .5rem;">MSRP is given; may vary.</p>
+            <p style="font-size: 12px; font-weight: 500;">By:Aneesh A, Hitansh S</p>
         </footer>
     </body>
 </html>

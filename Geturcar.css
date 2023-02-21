@@ -6,6 +6,9 @@
 --tertiary: 0,0,0;
 --bg:32,32,32;
 }
+.filter{
+filter:brightness(100%);
+}
 }
 @media (prefers-color-scheme: light){
 :root{
@@ -13,6 +16,9 @@
 --secondary:0, 71, 171;
 --tertiary:255,255,255;
 --bg:225,225,225;
+}
+.filter{
+filter:contrast(100%);
 }
 }
 ::-webkit-scrollbar {
