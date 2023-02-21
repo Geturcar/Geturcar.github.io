@@ -8,6 +8,7 @@ if(!x[i].innerHTML.toLowerCase().includes(input)){
     }
 }
 
+
 function Sedan() {//Show Sedan
   var element = document.getElementById("Sedan");
   element.classList.add("active2");
