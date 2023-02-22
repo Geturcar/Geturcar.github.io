@@ -10,7 +10,7 @@
 filter:brightness(100%);
 }
 td:hover{
-    background-color: black;
+background-color: black;
 }
 }
 @media (prefers-color-scheme: light){
@@ -24,7 +24,7 @@ td:hover{
 filter:brightness(0%)contrast(100%);
 }
 td:hover{
-    background-color: white;
+background-color: white;
 }
 }
 ::-webkit-scrollbar {
@@ -276,18 +276,24 @@ font-size: 18px;
 font-weight: 500;
 }
 td a{
-    display: block; 
-    padding: .25in;
-    color: rgb(var(--secondary));
+display: block; 
+padding: .25in;
+color: rgb(var(--secondary));
 }
 @media (prefers-color-scheme: dark){td:hover{
-    background-color: black;
+background-color: black;
 }}
 
 table{
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    width: 100%;
+text-align:center;
+margin-left: auto;
+margin-right: auto;
+border: none;
+width: 100%;
+}
+p:nth-child(odd) {
+text-align: left;
+}
+p:nth-child(even) {
+text-align: right;
 }
